@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+body {
+    @apply bg-gray-50 text-gray-900 font-sans;
+}
+    
+
+/* Custom Components */
+@layer components {
+    /* Button Styles */
+    .btn {
+        @apply bg-[#12b488] px-3 py-2 rounded-md text-sm text-white;
+      }
+    
+
+    /* Primary Button */
+    .btn-primary {
+        @apply bg-blue-500 text-white hover:bg-blue-600 active:bg-blue-700;
+    }
+
+    /* Secondary Button */
+    .btn-secondary {
+        @apply bg-gray-200 text-gray-800 hover:bg-gray-300 active:bg-gray-400;
+    }
+
+    /* Alert Messages */
+    .alert {
+        @apply p-4 rounded-md font-semibold;
+    }
+
+    /* Success Alert */
+    .alert-success {
+        @apply bg-green-100 text-green-800 border border-green-300;
+    }
+
+    /* Error Alert */
+    .alert-error {
+        @apply bg-red-100 text-red-800 border border-red-300;
+    }
+
+    /* Card Component */
+    .card {
+        @apply p-3 rounded-md bg-white shadow-md h-full;
+    }
+
+    /* Input Fields */
+    .input {
+        @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400;
+    }
+
+    /* Responsive Container */
+    .container {
+        @apply max-w-full sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto p-5;
+    }
+}

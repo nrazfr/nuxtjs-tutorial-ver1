@@ -4,12 +4,14 @@
             <p class="error-code">{{ error.statusCode }}</p>
             <p class="oops">Ooops.</p>
             <p class="error-message">{{ error.message }}</p>
+            <button class="btn my-7" @click="handleClearError">Back to Home..</button>
         </div>
     </div>
 </template>
 
 <script setup>
 defineProps(['error'])
+const handleClearError = () => clearError({redirect: '/'})
 </script>
 
 <style scoped>

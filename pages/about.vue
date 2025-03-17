@@ -13,11 +13,12 @@
     blanditiis mollitia sed nostrum saepe consectetur 
     autem debitis veniam eos exercitationem quisquam deserunt atque suscipit?
 </p>
+<div>{{ data }}</div>
     </div>
 </template>
 
-<script>
-    
+<script setup>
+    const {data} = await useFetch('/api/currency/MYR')
 </script>
 
 <style scoped>
